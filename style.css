@@ -1,0 +1,39 @@
+
+body {
+  background-color: red;
+  margin: 0;
+}
+
+/*
+Comentario
+#header { border: thin solid black; }
+*/
+
+#cr7km7 {
+  width: 600px;
+  border-radius: 10px;
+}
+
+#cr7km7-wrapper {
+  text-align: center;
+}
+.grid-container {
+  border: thin solid black;
+  display: grid;
+  grid-template-areas: 'header header header header header header'
+                       'right right content content content content'
+                       'footer footer footer footer footer footer';
+  grid-gap: 10px;
+}
+
+#header { grid-area: header; }
+#right {grid-area: right; }
+#content {
+  grid-area: content;
+  text-align: center;
+
+}
+#footer {grid-area: footer; }
+.box {
+  border: thin solid black;
+}
